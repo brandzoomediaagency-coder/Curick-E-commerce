@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curick | Quality Skincare, Honest Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <button class="announcement-arrow prev" id="announcementPrev"><i class="fas fa-chevron-left"></i></button>
+        <span class="announcement-text" id="announcementText">Trust Circle: Earn rewards on your skincare
+            journey!</span>
+        <button class="announcement-arrow next" id="announcementNext"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">Curick</a>
+            </div>
+
+            <div class="header-right">
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <a href="#account" class="account-icon" aria-label="Account">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container-flex">
+            <div class="hero-content">
+                <span class="hero-label">The Future of Skin</span>
+                <h1>Clean Science. <br>Honest Results.</h1>
+                <p>Discover high-performance skincare formulated with transparent ingredients. No luxury markup, just
+                    real science.</p>
+                <div class="hero-btns">
+                    <a href="#shop" class="btn">Shop Best Sellers</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Copilot_20260210_171009.png" alt="Curick Hero Product">
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="shop" class="section best-sellers">
+        <div class="container">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <div class="product-grid">
+                <!-- Product 1: Anti Hairfall Shampoo -->
+                <div class="product-card" onclick="window.location.href='product.html?id=hairfall-shampoo'">
+                    <div class="product-image">
+                        <img src="assets/shampoo.jpg" alt="Anti Hairfall Shampoo">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Curick Hair Shampoo – Conditioning</h3>
+                        <p class="description">Nourish • Repair • Smooth</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2: Anti Acne Foaming Face Wash -->
+                <div class="product-card" onclick="window.location.href='product.html?id=anti-acne-facewash'">
+                    <div class="product-image">
+                        <img src="assets/facewash.jpg" alt="Anti Acne Foaming Face Wash">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Curick Foaming Face Wash</h3>
+                        <p class="description">Clear Skin • Oil Control • Acne Defense</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3: Face & Body Sunscreen -->
+                <div class="product-card" onclick="window.location.href='product.html?id=sunscreen'">
+                    <div class="product-image">
+                        <span class="badge sale">Sale</span>
+                        <img src="assets/sunscreen.jpg" alt="Face & Body Sunscreen">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Face & Body Sunscreen</h3>
+                        <p class="description">Broad spectrum SPF 50 protection with no white cast.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4: Brightening Face Serum -->
+                <div class="product-card" onclick="window.location.href='product.html?id=brightening-serum'">
+                    <div class="product-image">
+                        <img src="assets/brightening-serum.jpg" alt="Brightening Face Serum">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brightening Face Serum</h3>
+                        <p class="description">Evens skin tone and boosts naturally healthy radiance.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5: Anti Acne Face Serum -->
+                <div class="product-card" onclick="window.location.href='product.html?id=anti-acne-serum'">
+                    <div class="product-image">
+                        <img src="assets/acne-serum-alt2.jpg" alt="Anti Acne Face Serum">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti Acne Face Serum</h3>
+                        <p class="description">Targets blemishes and controls excess oil production.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6: Anti Hairfall Hair Mask -->
+                <div class="product-card" onclick="window.location.href='product.html?id=hair-mask'">
+                    <div class="product-image">
+                        <span class="badge best-seller">Best Seller</span>
+                        <img src="assets/hair-mask.jpg" alt="Anti Hairfall Hair Mask">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti Hairfall Hair Mask</h3>
+                        <p class="description">Deeply conditions and repairs cuticle for smoother hair.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹599</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="window.location.href='product.html'">
+                    <img src="https://placehold.co/600x400/e0e0e0/333?text=Face" alt="Face Care">
+                    <div class="category-overlay">
+                        <h3>Face Care</h3>
+                    </div>
+                </div>
+                <div class="category-card" onclick="window.location.href='product.html'">
+                    <img src="https://placehold.co/600x400/e0e0e0/333?text=Body" alt="Body Care">
+                    <div class="category-overlay">
+                        <h3>Body Care</h3>
+                    </div>
+                </div>
+                <div class="category-card" onclick="window.location.href='product.html'">
+                    <img src="https://placehold.co/600x400/e0e0e0/333?text=Hair" alt="Hair Care">
+                    <div class="category-overlay">
+                        <h3>Hair Care</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+
+
+
+
+    <!-- Why Choose Us -->
+    <section id="about" class="section why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Curick</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Quality Assured</h3>
+                    <p>Dermatologically tested products safe for all skin types.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tag"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium quality skincare without the luxury markup.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Transparent Ingredients</h3>
+                    <p>We list every ingredient and its source openly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Customer Support</h3>
+                    <p>Dedicated support team to help you 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>Curick</h3>
+                <p>Clean science for your skin.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Curick. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Account Modal -->
+    <div class="modal" id="accountModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Welcome Back</h2>
+            <form class="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+            <p class="modal-footer-text">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
