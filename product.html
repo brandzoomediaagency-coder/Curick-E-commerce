@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Hairfall Hair Mask | Curick</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <button class="announcement-arrow prev" id="announcementPrev"><i class="fas fa-chevron-left"></i></button>
+        <span class="announcement-text" id="announcementText">TRUST CIRCLE: EARN REWARDS ON YOUR SKINCARE
+            JOURNEY!</span>
+        <button class="announcement-arrow next" id="announcementNext"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html#shop">Shop</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">Curick</a>
+            </div>
+
+            <div class="header-right">
+                <div class="header-tools">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <a href="#account" class="account-icon" aria-label="Account">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbs">
+        <a href="index.html">Home</a> &gt; <a href="#" id="breadcrumbCategory">Hair Care</a> &gt; <span
+            id="breadcrumbProduct">Anti Hairfall Hair Mask</span>
+    </div>
+
+    <!-- Product Section -->
+    <section class="container product-details-section">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="assets/hero-product.png" alt="Anti Hairfall Hair Mask" id="mainImage">
+            </div>
+            <div class="thumbnail-list">
+                <img src="assets/hero-product.png" class="thumb active" onclick="changeImage(this.src)" alt="Thumb 1">
+                <img src="https://placehold.co/100x100?text=Side" class="thumb" onclick="changeImage(this.src)"
+                    alt="Thumb 2">
+                <img src="https://placehold.co/100x100?text=Texture" class="thumb" onclick="changeImage(this.src)"
+                    alt="Thumb 3">
+                <img src="https://placehold.co/100x100?text=Use" class="thumb" onclick="changeImage(this.src)"
+                    alt="Thumb 4">
+            </div>
+        </div>
+
+        <div class="product-info-col">
+            <h1 class="product-title">Anti Hairfall Hair Mask</h1>
+            <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(128 Reviews)</span>
+            </div>
+
+            <div class="product-price">
+                <span class="sale-price">₹899</span>
+                <span class="original-price">₹1199</span>
+                <span class="discount-badge">25% OFF</span>
+                <p class="save-text">Save ₹300</p>
+            </div>
+
+            <p class="product-description">
+                Experience salon-like smoothness and cuticle repair with our Anti Hairfall Hair Mask.
+                Enriched with Hyaluronic Acid, Ceramide NP, and Hydrolyzed Keratin to strengthen hair and reduce frizz.
+            </p>
+
+            <div class="product-options">
+                <div class="option-group">
+                    <label>Size / Variant:</label>
+                    <select id="sizeSelector" class="size-dropdown">
+                        <option value="200gm">200gm</option>
+                        <option value="500gm">500gm</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label>Quantity:</label>
+                    <div class="quantity-selector">
+                        <button onclick="decrementQty()">-</button>
+                        <input type="number" id="quantity" value="1" min="1" readonly>
+                        <button onclick="incrementQty()">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <button class="btn btn-whatsapp" onclick="openWhatsAppModal()">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </button>
+                <button class="btn btn-secondary" onclick="openWhatsAppModal()">Order Now</button>
+            </div>
+
+            <div class="trust-badges">
+                <div class="badge-item"><i class="fas fa-truck"></i> Free Shipping</div>
+                <div class="badge-item"><i class="fas fa-undo"></i> Easy Returns</div>
+                <div class="badge-item"><i class="fas fa-lock"></i> Secure Payment</div>
+            </div>
+
+            <ul class="product-highlights">
+                <li><i class="fas fa-check"></i> Enriched with Hyaluronic Acid & Ceramides</li>
+                <li><i class="fas fa-check"></i> Reduces Hairfall & Frizz</li>
+                <li><i class="fas fa-check"></i> Suitable for All Hair Types</li>
+                <li><i class="fas fa-check"></i> Paraben & Sulphate Free</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="container product-tabs-section">
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="openTab(event, 'desc')">Description</button>
+            <button class="tab-btn" onclick="openTab(event, 'ingr')">Ingredients</button>
+            <button class="tab-btn" onclick="openTab(event, 'reviews')">Reviews</button>
+            <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping</button>
+        </div>
+
+        <div id="desc" class="tab-content active">
+            <p>Our Anti Hairfall Hair Mask is designed to provide deep nourishment and repair for damaged hair. The
+                unique blend of Hyaluronic Acid and Ceramides works to hydrate the scalp and strengthen hair follicles,
+                reducing breakage and hair fall.</p>
+            <p><strong>How to Use:</strong> Apply generously to damp hair from roots to tips. Leave on for 10-15
+                minutes. Rinse thoroughly with water. Use 1-2 times a week for best results.</p>
+        </div>
+        <div id="ingr" class="tab-content">
+            <p>Aqua, Cetostearyl Alcohol, Glycerin, Hyaluronic Acid, Ceramide NP, Hydrolyzed Keratin, Silk Protein,
+                Argan Oil, Shea Butter, Vitamin E, Fragrance.</p>
+        </div>
+        <div id="reviews" class="tab-content">
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p><strong>Sarah M.</strong> - Amazing product! My hair feels so soft.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p><strong>Rahul K.</strong> - Significantly reduced my hair fall in 2 weeks.</p>
+            </div>
+        </div>
+        <div id="shipping" class="tab-content">
+            <p><strong>Shipping:</strong> Free shipping on all orders above ₹500. Standard delivery takes 3-5 business
+                days.</p>
+            <p><strong>Returns:</strong> Easy 7-day return policy for damaged or incorrect items.</p>
+        </div>
+    </section>
+
+    <!-- Related Products (Carousel) -->
+    <section class="section related-products">
+        <div class="container carousel-container">
+            <h2 class="section-title">You May Also Like</h2>
+            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide product-card"
+                        onclick="window.location.href='product.html?id=hairfall-shampoo'">
+                        <div class="product-image">
+                            <img src="assets/shampoo.jpg" alt="Anti Hairfall Shampoo">
+                        </div>
+                        <div class="product-info">
+                            <h3>Curick Hair Shampoo – Conditioning</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">₹599</div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide product-card"
+                        onclick="window.location.href='product.html?id=anti-acne-facewash'">
+                        <div class="product-image">
+                            <img src="assets/facewash.jpg" alt="Anti Acne Foaming Face Wash">
+                        </div>
+                        <div class="product-info">
+                            <h3>Curick Foaming Face Wash</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <div class="price">₹599</div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide product-card" onclick="window.location.href='product.html?id=sunscreen'">
+                        <div class="product-image">
+                            <img src="assets/sunscreen.jpg" alt="Face & Body Sunscreen">
+                        </div>
+                        <div class="product-info">
+                            <h3>Face & Body Sunscreen</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">₹599</div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide product-card"
+                        onclick="window.location.href='product.html?id=brightening-serum'">
+                        <div class="product-image">
+                            <img src="assets/brightening-serum.jpg" alt="Brightening Face Serum">
+                        </div>
+                        <div class="product-info">
+                            <h3>Brightening Face Serum</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">₹599</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- WhatsApp Order Modal -->
+    <div class="modal" id="whatsappModal">
+        <div class="modal-content whatsapp-modal-content">
+            <span class="close-modal" onclick="closeWhatsAppModal()">&times;</span>
+            <h2><i class="fab fa-whatsapp"></i> Order Details</h2>
+            <form id="whatsappForm" onsubmit="submitWhatsAppOrder(event)">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="waName" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="waPhone" required>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address</label>
+                    <textarea id="waAddress" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Special Instructions (Optional)</label>
+                    <textarea id="waNotes"></textarea>
+                </div>
+                <input type="hidden" id="waProduct" value="Anti Hairfall Hair Mask">
+                <input type="hidden" id="waPrice" value="899">
+                <button type="submit" class="btn btn-whatsapp full-width">Confirm & Order on WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>Curick</h3>
+                <p>Advanced clinical skincare formulated for transparent, honest results.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html#about">Our Story</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom: 20px;">Subscribe to receive updates and exclusive deals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Curick. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
